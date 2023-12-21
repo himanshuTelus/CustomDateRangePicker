@@ -1,0 +1,22 @@
+@tailwind base;
+
+@tailwind components;
+
+button,
+[type='submit'] {
+  @apply bg-btnBase;
+}
+
+button,
+[type='cancel'] {
+  @apply flex items-center;
+}
+
+/* TODO: WE should use the layer for mixins or something similar to this */
+@layer components {
+  .resetLabel {
+    @apply pr-0 w-full text-start self-auto mb-1;
+  }
+}
+
+@tailwind utilities;

@@ -1,0 +1,10 @@
+@import '../scss/tailwind.css';
+
+
+.time-input-wrapper label {
+  @apply text-sm text-label m-[10px];
+}
+
+.time-input-wrapper input {
+  @apply border border-grey2 text-base px-[14px] py-[10px] text-inputText2 rounded-sm focus:outline-0;
+}

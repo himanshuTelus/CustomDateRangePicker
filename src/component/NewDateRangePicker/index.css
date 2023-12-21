@@ -1,0 +1,132 @@
+@import 'rsuite/dist/rsuite.css';
+@import '../scss/tailwind.css';
+
+.rs-picker-daterange-calendar-group {
+  @apply flex;
+}
+
+.rs-calendar-table-cell-selected.rs-calendar-table-cell-selected-start
+  .rs-calendar-table-cell-content,
+.rs-calendar-table-cell-selected.rs-calendar-table-cell-selected-end
+  .rs-calendar-table-cell-content {
+  @apply rounded bg-calenderGreen text-white;
+}
+
+.rs-calendar-table-cell-in-range::before {
+  @apply bg-calenderGreenLight;
+}
+
+.rs-calendar-table-cell-is-today .rs-calendar-table-cell-content {
+  box-shadow: inset 0 0 0 1px rgba(36, 135, 0, 1);
+}
+
+.rs-picker-menu
+  .rs-calendar
+  .rs-calendar-table-cell:hover
+  .rs-calendar-table-cell-content {
+  /* background-color: lightgreen !important; */
+  background-color: lightgray !important;
+  color: black !important;
+}
+
+.rs-btn-link {
+  color: black !important;
+}
+
+.rs-btn-link:hover,
+.rs-btn-link:focus {
+  @apply bg-calenderGreenLight;
+  text-decoration: initial;
+}
+
+.rs-btn-primary:disabled,
+.rs-btn-primary.rs-btn-disabled {
+  background-color: white;
+  opacity: 1;
+  box-shadow: inset 0 0 0 1px rgba(36, 135, 0, 1);
+  color: rgba(36, 135, 0, 1);
+}
+
+.rs-btn-primary {
+  background-color: white;
+  opacity: 1;
+  box-shadow: inset 0 0 0 1px rgba(36, 135, 0, 1);
+  color: rgba(36, 135, 0, 1);
+}
+
+.rs-picker-toolbar .time-section-wrapper {
+  @apply flex justify-between w-[275px];
+}
+
+.rs-picker-toolbar .time-section-wrapper .time-input-wrapper {
+  @apply w-[130px] flex;
+}
+
+.rs-picker-toolbar .time-section-wrapper .time-input-wrapper input {
+  /* @apply w-[full]; */
+  width: 70px !important;
+}
+
+.rs-picker-toolbar .rs-picker-toolbar-right button {
+  @apply bg-calenderGreen text-white;
+  width: 80px !important;
+  height: 30px !important;
+}
+
+.rs-picker-toolbar {
+  align-items: center !important;
+}
+
+.rs-picker {
+  width: 0px !important;
+  visibility: hidden;
+}
+
+.input-wrapper {
+  @apply z-[111];
+}
+
+.input-wrapper .date-range-input {
+  @apply font-helveticaTextRegular font-normal h-[38px] border border-borderGrey rounded bg-transparent px-[10px] pr-4 text-[14px] text-center outline-0 cursor-pointer z-[1] min-w-[244px];
+}
+
+.rs-calendar-header-month-toolbar .rs-calendar-header-title {
+  color: black !important;
+}
+
+.rs-btn-link:hover {
+  color: rgba(36, 135, 0, 1) !important;
+  background-color: white !important;
+}
+
+.rs-btn-link:focus{
+  color: rgba(36, 135, 0, 1) !important;
+  background-color: white !important;
+}
+
+.rs-btn-link:disabled, .rs-btn-link.rs-btn-disabled{
+  opacity: 1.0;
+  color: rgba(36, 135, 0, 1) !important;
+  background-color: white !important;
+}
+
+.input-wrapper{
+  @apply flex items-center;
+}
+
+.input-wrapper .icon-wrapper{
+  display: flex;
+  align-items: center;
+  height: 38px;
+  @apply border border-borderGrey rounded;
+  border-left: 0px !important;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  padding-right: 8px;
+}
+
+.border-right-0{
+  border-right: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}

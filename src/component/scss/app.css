@@ -1,0 +1,57 @@
+@import './tailwind.css';
+@import './font.css';
+
+#root {
+  @apply flex flex-col overflow-hidden;
+}
+
+*::-webkit-scrollbar-thumb {
+  @apply bg-grey2;
+  border-radius: 5px;
+  left: 2px;
+  padding: 1px;
+}
+
+*::-webkit-scrollbar {
+  @apply bg-scrollbarWhite;
+  width: 10px;
+  height: 6px;
+  border-radius: 50px;
+}
+
+*::-webkit-scrollbar-track {
+  @apply bg-scrollbarWhite;
+  background-clip: content-box;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.app__header {
+  @apply sticky left-0 right-0 z-[999];
+}
+
+.app__content {
+  @apply flex flex-1 bg-scrollbarWhite w-full;
+}
+
+.app__content__sidebar {
+  @apply fixed z-[99] w-16;
+}
+
+.app__content__routes {
+  @apply overflow-y-auto sm-small:ml-16 flex flex-1;
+  max-height: calc(100vh - 68px);
+}
+
+.full-h {
+  max-height: 100vh !important;
+}
+
+.hand {
+  @apply cursor-pointer;
+}
+.noHand {
+  @apply cursor-default;
+}
+.custom-font-family-rg {
+  font-family: 'HelveticaNowText-Rg' !important;
+}

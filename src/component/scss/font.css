@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'HelveticaNow-Th';
+  src: url('../font-family/Thin/HelveticaNowTextThin.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNowText-Bl';
+  src: url('../font-family/Bold/HelveticaNowTextBold.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNowDisplay-Bd';
+  src: url('../font-family/Bold/HelveticaNowDisplayBold.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNowText-Lt';
+  src: url('../font-family/Light/HelveticaNowTextLight.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNowText-Md';
+  src: url('../font-family/Medium/HelveticaNowTextMedium.ttf')
+    format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNowDisplay-Md';
+  src: url('../font-family/Medium/HelveticaNowDisplayMedium.ttf')
+    format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNowDisplay-Rg';
+  src: url('../font-family/Regular/HelveticaNowDisplay.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNowText-Rg';
+  src: url('../font-family/Regular/HelveticaNowText.ttf') format('truetype');
+  font-style: normal;
+}
